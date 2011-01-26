@@ -35,7 +35,17 @@
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
 	</style>
-	
+
+  <script type="text/javascript" src="http://github.com/robertodecurnex/kCode/raw/master/kCode.min.js"></script>
+  <script type="text/javascript">
+    window.onload = function(){
+      kCode.listen(
+        function(){
+          alert("CATS: ALL YOUR BASE ARE BELONG TO US.");
+        }
+      );
+    }
+  </script>  
 </head>
 
 <body>
@@ -83,6 +93,7 @@
   alert("CATS: ALL YOUR BASE ARE BELONG TO US.");
 };  
 kCode.listen(success);</pre>
+    <p>Why don't you try it here?</p>
     <div class="footer">
       get the source code on GitHub : <a href="http://github.com/robertodecurnex/kCode">robertodecurnex/kCode</a>
     </div>
