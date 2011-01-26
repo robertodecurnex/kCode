@@ -8,24 +8,29 @@
 	<title>robertodecurnex/kCode @ GitHub</title>
 	
 	<style type="text/css">
+    @font-face {
+      font-family: 'Josefin Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Josefin Sans'), local('JosefinSans'), url('http://themes.googleusercontent.com/font?kit=xgzbb53t8j-Mo-vYa23n5onF5uFdDttMLvmWuJdhhgs') format('truetype');
+    }
 		body {
   		margin-top: 1.0em;
-  		background-color: #54c079;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #000000;
+  		background-color: #030;
+		  font-family: 'Josefin Sans', serif; color: #f1f1f1;
     }
     #container {
       margin: 0 auto;
       width: 700px;
     }
-		h1 { font-size: 3.8em; color: #ab3f86; margin-bottom: 3px; }
+		h1 { font-size: 3.8em; color: #ffee6c; margin-bottom: 3px; }
 		h1 .small { font-size: 0.4em; }
 		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #ab3f86; }
-    h3 { text-align: center; color: #ab3f86; }
-    a { color: #ab3f86; }
+		h2 { font-size: 1.5em; color: #ffee6c; }
+    h3 { text-align: center; color: #ffee6c; }
+    a { color: #ffee6c; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
+    .download,.fundry { float: right; }
 		pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
@@ -34,29 +39,33 @@
 </head>
 
 <body>
-  <a href="http://github.com/robertodecurnex/kCode"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  <a href="http://github.com/robertodecurnex/kCode"><img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
   <div id="container">
-
-    <div class="download">
-      <a href="http://github.com/robertodecurnex/kCode/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/robertodecurnex/kCode/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    <div class="fundry" style="text-align:right">
+      <script type="text/javascript" src="https://fundry.com/js/widget.js"></script>
+      <script type="text/javascript">
+        // <![CDATA[
+          new Fundry.Widget('https://fundry.com/project/76-kcode/widget', {width: '320px', height: '200px'});
+        // ]]>
+      </script>
+      <br/>
+      <a href="http://fundry.com/">Powered by Fundry</a>
     </div>
-
-    <h1><a href="http://github.com/robertodecurnex/kCode">kCode</a>
-      <span class="small">by <a href="http://github.com/robertodecurnex">robertodecurnex</a></span></h1>
+<!--
+    <div class="download">
+      <a href="http://github.com/robertodecurnex/kCode/zipball/master"> <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+      <a href="http://github.com/robertodecurnex/kCode/tarball/master"> <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    </div>
+-->
+    <h1><a href="http://github.com/robertodecurnex/kCode">kCode</a></h1>
 
     <div class="description">
-      Simple Konami Code implementation (Pure JS)
+      Simple Konami Code implementation (pure JS)
     </div>
 
     <h2>Authors</h2>
-<p>robertodecurnex (nex.development@gmail.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Roberto Decurnex (nex.development@gmail.com)<br/>      </p>
-
+    <p>Roberto Decurnex (nex.development@gmail.com)<br/></p>
 
     <h2>Download</h2>
     <p>
@@ -64,17 +73,19 @@
       <a href="http://github.com/robertodecurnex/kCode/zipball/master">zip</a> or
       <a href="http://github.com/robertodecurnex/kCode/tarball/master">tar</a> formats.
     </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
+    <p>
+      You can also clone the project with <a href="http://git-scm.com">Git</a> by running:
       <pre>$ git clone git://github.com/robertodecurnex/kCode</pre>
     </p>
 
+    <h2>Quick Example</h2>
+    <pre>var success = function(){
+  alert("CATS: ALL YOUR BASE ARE BELONG TO US.");
+};  
+kCode.listen(success);</pre>
     <div class="footer">
       get the source code on GitHub : <a href="http://github.com/robertodecurnex/kCode">robertodecurnex/kCode</a>
     </div>
-
   </div>
-
-  
 </body>
 </html>
