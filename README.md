@@ -3,7 +3,7 @@
 
 <h2>Authors</h2>
 
-Roberto Decurnex (nex.development@gmail.com)
+Roberto Decurnex
 
 <h2>Download</h2>
 <p>
